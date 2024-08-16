@@ -31,28 +31,15 @@ export default function Home() {
   return (
     <div>
       <main className="bg-black">
-        <section className="text-left gap-y-6 grid grid-cols-1 md:grid-cols-2 py-24 px-4 md:px-8 w-full mx-auto max-w-[1024px] relative">
+        <section className="text-left py-24 px-4 md:px-8 w-full mx-auto max-w-[1024px] relative">
           <div className="absolute top-4 md:top-24 right-4">
             <LanguagePicker />
           </div>
-          <div className="md:order-1 order-2">
-            <WorkDescription
-              label={t('introduction.heading')}
-              title={t('introduction.name')}
-              headerTitle
-              paragraphs={paragraphsArray}
-              technologies={technologiesArray}
-              technologiesLabel={t('introduction.technologyline')}
-            />
-            <SocialLinks
-              data={socialLinkData}
-              className="mt-4"
-              label="Find me on:"
-            />
-          </div>
-          <div className="md:order-2 order-1 flex flex-col justify-center items-center">
-            <AsciiPortrait />
-          </div>
+          <h1 className="text-theme-xl font-sedan">
+            Raising Your Standard for
+            <br />
+            Hair Salons in Las Vegas
+          </h1>
         </section>
         {/* 
         <section className="text-left mb-8">
