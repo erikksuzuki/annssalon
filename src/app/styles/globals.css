@@ -1,0 +1,288 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  min-height: 100vh;
+  color: rgb(var(--foreground-rgb));
+  background: #092739;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.code-block-wrapper span:first-child,
+.code-block-wrapper-light span:first-child {
+  background-color: transparent !important;
+}
+.code-block-wrapper span:first-child code:first-child {
+  color: #eee;
+}
+.code-block-wrapper-light span:first-child code:first-child {
+  color: black;
+}
+.code-block-wrapper .literal-property {
+  color: #c792ea !important;
+}
+.code-block-wrapper-light .literal-property {
+  color: black !important;
+}
+
+.linenumber {
+  min-width: 3.25em !important;
+}
+
+.linenumber {
+  min-width: 3.25em !important;
+  user-select: text !important;
+}
+
+.bg-steam-backdrop::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: brightness(1.65) contrast(190%) saturate(149%) sepia(35%);
+  -webkit-backdrop-filter: brightness(1.45) contrast(180%) saturate(149%)
+    sepia(35%);
+}
+
+.bg-acryllic-black {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(0.6rem) !important;
+  -webkit-backdrop-filter: blur(0.6rem) !important;
+}
+
+.bg-acryllic-blacker {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(0.6rem) !important;
+  -webkit-backdrop-filter: blur(0.6rem) !important;
+}
+
+.spotify-audio-bar {
+  background: rgb(255, 255, 255);
+  bottom: 1px;
+  height: 3px;
+  position: absolute;
+  width: 3px;
+  animation: sound 0ms -800ms linear infinite alternate;
+}
+
+@keyframes sound {
+  0% {
+    opacity: 0.35;
+    height: 3px;
+  }
+  100% {
+    opacity: 1;
+    height: 14px;
+  }
+}
+
+.spotify-audio-bar:nth-child(1) {
+  left: 1px;
+  animation-duration: 474ms;
+}
+.spotify-audio-bar:nth-child(2) {
+  left: 5px;
+  animation-duration: 433ms;
+}
+.spotify-audio-bar:nth-child(3) {
+  left: 9px;
+  animation-duration: 407ms;
+}
+.spotify-audio-bar:nth-child(4) {
+  left: 13px;
+  animation-duration: 458ms;
+}
+.spotify-audio-bar:nth-child(5) {
+  left: 17px;
+  animation-duration: 400ms;
+}
+.spotify-audio-bar:nth-child(6) {
+  left: 21px;
+  animation-duration: 427ms;
+}
+.spotify-audio-bar:nth-child(7) {
+  left: 25px;
+  animation-duration: 441ms;
+}
+.spotify-audio-bar:nth-child(8) {
+  left: 29px;
+  animation-duration: 419ms;
+}
+.spotify-audio-bar:nth-child(9) {
+  left: 33px;
+  animation-duration: 487ms;
+}
+.spotify-audio-bar:nth-child(10) {
+  left: 37px;
+  animation-duration: 442ms;
+}
+
+@keyframes quiet {
+  25% {
+    transform: scaleY(0.6);
+  }
+  50% {
+    transform: scaleY(0.4);
+  }
+  75% {
+    transform: scaleY(0.8);
+  }
+}
+
+@keyframes normal {
+  25% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.4);
+  }
+  75% {
+    transform: scaleY(0.6);
+  }
+}
+@keyframes loud {
+  25% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.4);
+  }
+  75% {
+    transform: scaleY(1.2);
+  }
+}
+
+.spotify-loading-spinner {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  --boxSize: 8px;
+  --gutter: 4px;
+  width: calc((var(--boxSize) + var(--gutter)) * 5);
+}
+
+.spotify-loading {
+  transform: scaleY(0.4);
+  height: 100%;
+  width: var(--boxSize);
+  background: #00ff00;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  border-radius: 8px;
+}
+
+.spotify-loading1 {
+  animation-name: quiet;
+}
+
+.spotify-loading2 {
+  animation-name: normal;
+}
+
+.spotify-loading3 {
+  animation-name: quiet;
+}
+
+.spotify-loading4 {
+  animation-name: loud;
+}
+
+.spotify-loading5 {
+  animation-name: quiet;
+}
+
+.TooltipContent {
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 15px;
+  line-height: 1;
+  color: #fff;
+  background-color: #000;
+  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
+    hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  user-select: none;
+  animation-duration: 400ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+.TooltipContent[data-state='delayed-open'][data-side='top'] {
+  animation-name: slideDownAndFade;
+}
+.TooltipContent[data-state='delayed-open'][data-side='right'] {
+  animation-name: slideLeftAndFade;
+}
+.TooltipContent[data-state='delayed-open'][data-side='bottom'] {
+  animation-name: slideUpAndFade;
+}
+.TooltipContent[data-state='delayed-open'][data-side='left'] {
+  animation-name: slideRightAndFade;
+}
+
+.TooltipArrow {
+  fill: #000;
+}
+
+@keyframes slideUpAndFade {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRightAndFade {
+  from {
+    opacity: 0;
+    transform: translateX(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideDownAndFade {
+  from {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeftAndFade {
+  from {
+    opacity: 0;
+    transform: translateX(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
