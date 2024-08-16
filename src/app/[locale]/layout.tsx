@@ -13,6 +13,8 @@ import {
   Roboto,
   Open_Sans,
   Fira_Code,
+  Lato,
+  Sedan,
 } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations } from 'next-intl/server'
@@ -60,74 +62,18 @@ export const viewport = {
   height: 'device-height',
 }
 
-const poppins = Poppins({
+const lato = Lato({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-poppins',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-lato',
+  weight: ['100', '300', '400', '700', '900'],
 })
 
-const firaCode = Fira_Code({
+const sedan = Sedan({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-fira-code',
-  weight: ['300', '400', '500', '600', '700'],
-})
-
-const iBarraRealNova = Ibarra_Real_Nova({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-ibarra-real-nova',
+  variable: '--font-sedan',
   weight: ['400'],
-})
-
-const notoSansThai = Noto_Sans_Thai({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-noto-sans-thai',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-})
-
-const notoSansJapanese = Noto_Sans_JP({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-noto-sans-jp',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-})
-
-const sawabiMincho = Sawarabi_Mincho({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-sawabi-jp',
-  weight: ['400'],
-})
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-space',
-  weight: ['300', '400', '500', '600', '700'],
-})
-
-const exo = Exo({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-exo',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-})
-
-const roboto = Roboto({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-roboto',
-  weight: ['100', '300', '400', '500', '700', '900'],
-})
-
-const openSans = Open_Sans({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-open-sans',
-  weight: ['300', '400', '500', '600', '700', '800'],
 })
 
 const emoji = Noto_Emoji({
@@ -150,18 +96,9 @@ const RootLayout = async ({
       <body
         className={clsx(
           'bg-[#0A2B3E] text-white',
-          firaCode.variable,
-          notoSansThai.variable,
-          notoSansJapanese.variable,
-          sawabiMincho.variable,
-          poppins.variable,
-          iBarraRealNova.variable,
-          spaceGrotesk.variable,
-          exo.variable,
-          emoji.variable,
-          roboto.variable,
-          openSans.variable,
-          'font-space'
+          lato.variable,
+          sedan.variable,
+          'font-lato'
         )}
       >
         <NextIntlClientProvider messages={messages}>

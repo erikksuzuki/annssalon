@@ -7,18 +7,9 @@ module.exports = {
     extend: {
       fontFamily: {
         // 👇 Add CSS variables
-        'fira-code': ['var(--font-fira-code)'],
-        space: ['var(--font-space)'],
-        exo: ['var(--font-exo)'],
-        poppins: ['var(--font-poppins)'],
+        lato: ['var(--font-lato)'],
+        sedan: ['var(--font-sedan)'],
         emoji: ['var(--font-emoji)'],
-        'real-nova': ['var(--font-ibarra-real-nova)'],
-        'unica-one': ['var(--font-unica-one)'],
-        roboto: ['var(--font-roboto)'],
-        'open-sans': ['var(--font-open-sans)'],
-        'noto-thai': ['var(--font-noto-sans-thai)'],
-        'noto-jp': ['var(--font-noto-sans-jp)'],
-        'sawabi-jp': ['var(--font-sawabi-jp)'],
       },
       fontSize: {
         'theme-heading-2xl': ['4.5rem', '5.625rem'],
