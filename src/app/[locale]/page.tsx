@@ -7,13 +7,6 @@ import LanguagePicker from '@/components/common/LanguageSwitcher'
 
 import AsciiPortrait from '@/components/Header/AsciiPortrait'
 
-import SpotifySection from '@/app/[locale]/Spotify'
-import BlockscopeSection from './Blockscope'
-import FreeportSection from './Freeport'
-import GeminiSection from './Gemini'
-import FreelanceSection from './Freelance'
-import SteamSection from './Steam'
-
 export default function Home() {
   const t = useTranslations('header')
   const messages = useMessages() as any

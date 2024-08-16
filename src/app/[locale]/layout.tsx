@@ -38,9 +38,9 @@ export async function generateMetadata({
       },
     },
     openGraph: {
-      title: 'Eric Suzuki - Full Stack Web Developer',
+      title: "Ann's Salon",
       url: 'https://emptyblueprints.art',
-      siteName: 'Eric Suzuki - Full Stack Web Developer',
+      siteName: "Ann's Salon",
       images: [
         {
           url: 'https://emptyblueprints.art/opengraph-image.jpg',
