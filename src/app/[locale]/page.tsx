@@ -9,6 +9,8 @@ import AsciiPortrait from '@/components/Header/AsciiPortrait'
 import Button from '@/components/common/Button'
 import SubHeading from '@/components/common/SubHeading'
 import Heading from '@/components/common/Heading'
+import GiantQuote from '@/components/Landing/GiantQuote'
+import PhotoQuote from '@/components/Landing/PhotoQuote'
 
 export default function Home() {
   const t = useTranslations('header')
@@ -34,7 +36,7 @@ export default function Home() {
   return (
     <div>
       <main className="bg-black">
-        <section className="text-left py-24 px-4 md:px-8 w-full mx-auto max-w-[1024px] relative">
+        <section className="text-left py-24 px-4 md:px-8 w-full mx-auto max-w-[1280px] relative">
           <div className="absolute top-4 md:top-24 right-4">
             <LanguagePicker />
           </div>
@@ -63,6 +65,8 @@ export default function Home() {
         </section>
       */}
       </main>
+      <PhotoQuote />
+      <GiantQuote />
       <div className="py-24 px-4 md:px-8 w-full mx-auto max-w-[1024px]"></div>
     </div>
   )

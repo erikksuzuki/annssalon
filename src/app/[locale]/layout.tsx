@@ -1,21 +1,7 @@
 import type { Metadata } from 'next'
 import '@/styles/globals.css'
 import clsx from 'clsx'
-import {
-  Noto_Sans_Thai,
-  Noto_Sans_JP,
-  Sawarabi_Mincho,
-  Ibarra_Real_Nova,
-  Poppins,
-  Space_Grotesk,
-  Exo,
-  Noto_Emoji,
-  Roboto,
-  Open_Sans,
-  Fira_Code,
-  Lato,
-  Sedan,
-} from 'next/font/google'
+import { Noto_Emoji, Lato, Sedan } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations } from 'next-intl/server'
 import { type Locale } from 'src/locales'
@@ -95,7 +81,7 @@ const RootLayout = async ({
     <html lang="en">
       <body
         className={clsx(
-          'bg-[#0A2B3E] text-white',
+          'bg-[#E6E6E6] text-white',
           lato.variable,
           sedan.variable,
           'font-lato'
