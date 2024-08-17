@@ -6,6 +6,9 @@ import { socialLinkData } from '../socialLinkData'
 import LanguagePicker from '@/components/common/LanguageSwitcher'
 
 import AsciiPortrait from '@/components/Header/AsciiPortrait'
+import Button from '@/components/common/Button'
+import SubHeading from '@/components/common/SubHeading'
+import Heading from '@/components/common/Heading'
 
 export default function Home() {
   const t = useTranslations('header')
@@ -35,11 +38,17 @@ export default function Home() {
           <div className="absolute top-4 md:top-24 right-4">
             <LanguagePicker />
           </div>
-          <h1 className="text-theme-xl font-sedan">
+          <h1 className="text-theme-heading-lg font-sedan">
             Raising Your Standard for
             <br />
             Hair Salons in Las Vegas
           </h1>
+          <Button size="md" shadow />
+
+          <div className="mt-10">
+            <SubHeading>Too many choices</SubHeading>
+            <Heading>Find your forever salon</Heading>
+          </div>
         </section>
         {/* 
         <section className="text-left mb-8">
