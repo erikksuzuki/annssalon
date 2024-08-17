@@ -9,7 +9,7 @@ module.exports = {
         // 👇 Add CSS variables
         lato: ['var(--font-lato)'],
         sedan: ['var(--font-sedan)'],
-        emoji: ['var(--font-emoji)'],
+        marker: ['var(--font-marker)'],
       },
       fontSize: {
         'theme-heading-2xl': ['4.5rem', '5.625rem'],

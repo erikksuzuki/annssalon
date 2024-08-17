@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import '@/styles/globals.css'
 import clsx from 'clsx'
-import { Noto_Emoji, Lato, Sedan } from 'next/font/google'
+import { Noto_Emoji, Lato, Sedan, Permanent_Marker } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations } from 'next-intl/server'
 import { type Locale } from 'src/locales'
@@ -62,10 +62,10 @@ const sedan = Sedan({
   weight: ['400'],
 })
 
-const emoji = Noto_Emoji({
+const permanentMarker = Permanent_Marker({
   subsets: [],
   display: 'swap',
-  variable: '--font-emoji',
+  variable: '--font-marker',
   weight: ['400'],
 })
 
@@ -84,10 +84,20 @@ const RootLayout = async ({
           'bg-[#E6E6E6] text-white',
           lato.variable,
           sedan.variable,
+          permanentMarker.variable,
           'font-lato'
         )}
       >
         <NextIntlClientProvider messages={messages}>
+          <header className="bg-[#111] py-4">
+            <nav className="mx-auto max-w-[1280px] px-8 flex justify-between">
+              <h1 className="font-marker text-[40px]">Ann&apos;s Salon</h1>
+              <div className="text-right text-base flex flex-col justify-center items-end">
+                <div>5700 W. Spring Mountain Rd</div>
+                <div>(702)-367-3117</div>
+              </div>
+            </nav>
+          </header>
           <main
             className={clsx(
               { 'font-exo': locale === 'en' },
@@ -97,7 +107,7 @@ const RootLayout = async ({
             {children}
           </main>
           <footer className="bg-black">
-            <main className="py-8 px-4 md:px-8 w-full mx-auto max-w-[1024px]">
+            <main className="py-8 px-4 md:px-8 w-full mx-auto max-w-[1280px]">
               <SocialLinks
                 data={socialLinkData}
                 className="mt-4"
