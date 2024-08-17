@@ -15,7 +15,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'landing' })
   return {
-    title: t('metadata.title'),
+    title: "Ann's Salon",
     description: t('metadata.description'),
     robots: {
       index: true,
