@@ -27,7 +27,7 @@ const PhotoQuote = () => {
         <article className="w-full h-full">
           <Image
             src={JakePortrait.src}
-            alt="Jake Davenport"
+            alt="Jake D"
             width="800"
             height="800"
             className="w-full"
