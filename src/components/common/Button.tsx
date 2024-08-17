@@ -1,16 +1,21 @@
 import clsx from 'clsx'
+import { ReactNode } from 'react'
 
 interface ButtonProps {
   size?: 'md' | 'lg'
+  className?: string
   secondaryColor?: boolean
   shadow?: boolean
+  children?: ReactNode
   onClick?: any
 }
 
 const Button = ({
   size = 'md',
+  className,
   secondaryColor = false,
   shadow = false,
+  children = 'Click Here',
   onClick,
 }: ButtonProps) => {
   return (
@@ -31,10 +36,11 @@ const Button = ({
         { 'bg-[rgb(194,12,141)]': !secondaryColor },
         { 'text-[#fff]': !secondaryColor },
         { 'bg-[rgba(194,12,141,0.2)]': secondaryColor },
-        { 'text-[rgb(154,18,119)]': secondaryColor }
+        { 'text-[rgb(154,18,119)]': secondaryColor },
+        className
       )}
     >
-      Book Now
+      {children}
     </button>
   )
 }
