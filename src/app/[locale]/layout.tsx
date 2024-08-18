@@ -90,12 +90,18 @@ const RootLayout = async ({
       >
         <NextIntlClientProvider messages={messages}>
           <header className="bg-[#111] py-4">
-            <nav className="mx-auto max-w-[1280px] px-8 flex justify-between">
+            <nav className="mx-auto max-w-[1280px] px-8 justify-between hidden md:flex">
               <h1 className="font-marker text-[40px]">Ann&apos;s Salon</h1>
               <div className="text-right text-base flex flex-col justify-center items-end">
                 <div>5700 W. Spring Mountain Rd</div>
                 <div>(702)-367-3117</div>
               </div>
+            </nav>
+
+            <nav className="mx-auto max-w-[1280px] px-8 justify-between md:hidden flex">
+              <h1 className="font-marker text-theme-heading-xs">
+                Ann&apos;s Salon
+              </h1>
             </nav>
           </header>
           <main
@@ -111,7 +117,7 @@ const RootLayout = async ({
               <SocialLinks
                 data={socialLinkData}
                 className="mt-4"
-                label="Contact me at:"
+                label="Find us at:"
               />
             </main>
           </footer>
