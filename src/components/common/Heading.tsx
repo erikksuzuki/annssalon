@@ -4,15 +4,23 @@ import { type ReactNode } from 'react'
 interface HeadingProps {
   children?: ReactNode
   capitalized?: boolean
+  size?: 'sm' | 'md'
   className?: string
 }
 
-const Heading = ({ children, capitalized = true, className }: HeadingProps) => {
+const Heading = ({
+  children,
+  capitalized = true,
+  size = 'md',
+  className,
+}: HeadingProps) => {
   return (
     <h3
       className={clsx(
-        'text-2xl font-sedan',
+        'font-sedan',
         { capitalize: capitalized },
+        { 'text-2xl': size === 'md' },
+        { 'text-xl': size === 'sm' },
         className
       )}
     >
