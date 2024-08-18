@@ -15,32 +15,22 @@ export interface SocialLink {
 export const socialLinkData: SocialLink[] = [
   {
     name: 'GitHub',
-    href: 'https://github.com/erikksuzuki/portfolio/pull/1',
+    href: 'https://github.com/erikksuzuki/',
     icon: <IconGithub className="w-6 h-6 hover:text-[#DDDDDD]" />,
   },
   {
     name: 'Instagram',
-    href: 'https://www.instagram.com/erikksuzuki',
+    href: 'https://www.instagram.com/',
     icon: <IconInstagram className="w-6 h-6 hover:text-[#FAA6A0]" />,
   },
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/eric-suzuki-04380449/',
+    href: 'https://www.linkedin.com/',
     icon: <IconLinkedin className="w-6 h-6 hover:text-[#4DA6F0]" />,
   },
   {
     name: 'Tumblr',
-    href: 'https://emptyblueprints-blog.tumblr.com',
+    href: 'https://tumblr.com',
     icon: <IconTumblr className="w-6 h-6 hover:text-[#4DCAE0]" />,
-  },
-  {
-    name: 'Resume',
-    href: 'https://archived.alkemyst.app/eric_suzuki_cv_2024_with_portfolio.pdf',
-    icon: <IconCv className="w-6 h-6 hover:text-[#DDDDDD]" />,
-  },
-  {
-    name: 'Calendly',
-    href: 'https://calendly.com/erikksuzuki/one-hour-block',
-    icon: <IconCalendly className="w-6 h-6 hover:text-[#DDDDDD]" />,
   },
 ]
