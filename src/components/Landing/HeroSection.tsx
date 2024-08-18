@@ -1,3 +1,5 @@
+'use client'
+
 import { useMessages, useTranslations } from 'next-intl'
 
 import LanguagePicker from '@/components/common/LanguageSwitcher'
@@ -7,7 +9,10 @@ import ShopPhoto from '@/assets/photos/shop.jpg'
 import SubHeading from '@/components/common/SubHeading'
 import Heading from '../common/Heading'
 
+import { useResponsive } from '@/hooks/useResponsive'
+
 const HeroSection = () => {
+  const { isAboveMd } = useResponsive('md')
   return (
     <section>
       <article
@@ -22,7 +27,9 @@ const HeroSection = () => {
         <div
           className="w-full h-full"
           style={{
-            backdropFilter: 'brightness(0.46) contrast(83%)',
+            backdropFilter: isAboveMd
+              ? 'brightness(0.46) contrast(83%)'
+              : 'brightness(0.86) contrast(83%)',
           }}
         >
           <div className="text-left py-[180px] px-4 md:px-8 w-full mx-auto max-w-[1280px] relative">
