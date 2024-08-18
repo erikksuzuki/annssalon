@@ -30,7 +30,7 @@ const HeroSection = () => {
               <LanguagePicker />
             </div>
             <div className="hidden md:block">
-              <Heading>
+              <Heading size="xl">
                 Your One-Stop Shop For All Your
                 <br />
                 Beauty Needs in Las Vegas
@@ -45,7 +45,7 @@ const HeroSection = () => {
           </div>
         </div>
       </article>
-      <article className="bg-[#111] text-center py-12 px-4">
+      <article className="bg-[#111] text-center py-12 px-4 md:hidden block">
         <h1 className="text-[20px] font-sedan">
           Your One-Stop Shop For All Your
           <br />
