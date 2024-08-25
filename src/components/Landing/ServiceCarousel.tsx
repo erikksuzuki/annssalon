@@ -52,6 +52,11 @@ const ServiceCarousel = () => {
         imgSrc={ServiceMensHairCutPhoto.src}
         subHeading="Starting at $23"
         heading="Men's Hair Cut"
+        dialogContent={[
+          { name: "Men's Hair Cut", price: 23 },
+          { name: 'Hair Cut & Shampoo', price: 30 },
+          { name: 'Hair Cut & Color', price: 65 },
+        ]}
       >
         Two reasons you should find a stylist and stick with them, consistency
         and efficiency. As we get to know your hair better, your cut gets
