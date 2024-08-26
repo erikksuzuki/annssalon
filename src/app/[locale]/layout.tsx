@@ -7,6 +7,7 @@ import { getMessages, getTranslations } from 'next-intl/server'
 import { type Locale } from 'src/locales'
 import SocialLinks from '@/components/common/SocialLinks'
 import { socialLinkData } from '../socialLinkData'
+import Analytics from './Analytics'
 
 export async function generateMetadata({
   params: { locale },
@@ -79,6 +80,9 @@ const RootLayout = async ({
   const messages = await getMessages()
   return (
     <html lang="en">
+      <head>
+        <Analytics />
+      </head>
       <body
         className={clsx(
           'bg-[#E6E6E6] text-white',
