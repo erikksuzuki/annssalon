@@ -45,6 +45,7 @@ const ServiceCarousel = () => {
       ssr={true}
       responsive={responsive}
       infinite={true}
+      arrows={isAboveMd ? true : false}
       partialVisible={isAboveMd ? false : true}
       centerMode={isAboveMd ? true : false}
     >
