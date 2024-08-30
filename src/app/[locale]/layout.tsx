@@ -81,6 +81,7 @@ const RootLayout = async ({
   return (
     <html lang="en">
       <head>
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
         <Analytics />
       </head>
       <body
