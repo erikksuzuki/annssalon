@@ -100,13 +100,13 @@ const TestimonialCarousel = () => {
         platform="yelp"
         href="https://www.yelp.com/biz/anns-salon-las-vegas?hrid=HDa_toqP7yW5rvPA3XevHw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)"
       >
-        I have been going to Ann's Salon for 15+ years and my family has
+        I have been going to Ann&apos;s Salon for 15+ years and my family has
         continually gone to the salon for all our haircuts, coloring & nails. We
         are very lucky to have <b className="text-black">Ann</b>, the
         owner/operator, as our main hairstylist. She has tons of loyal clients
         but she always finds a way to fit you in her schedule. I highly suggest
-        you consider your next hair or nail appointment at Ann's Salon! You
-        won't be disappointed. It's time to look your new you!
+        you consider your next hair or nail appointment at Ann&apos;s Salon! You
+        won&apos;t be disappointed. It&apos;s time to look your new you!
       </TestimonialCard>
       <TestimonialCard
         className="mb-0"
@@ -131,9 +131,9 @@ const TestimonialCarousel = () => {
         href="https://g.co/kgs/654UZR6"
       >
         <b className="text-black">Kim</b> is the best. I have lived in Las Vegas
-        for 12 years and have only missed a haircut from her once. I'll keep
-        going until I move away. When I go back to vacation in Vegas, I'll drop
-        in for a haircut. It's quite rejuvenating.
+        for 12 years and have only missed a haircut from her once. I&apos;ll
+        keep going until I move away. When I go back to vacation in Vegas,
+        I&apos;ll drop in for a haircut. It&apos;s quite rejuvenating.
       </TestimonialCard>
       <TestimonialCard
         className="mb-0"

@@ -18,14 +18,14 @@ const PhotoQuote = () => {
             size="sm"
             capitalized={false}
           >
-            Ann's Salon is a cherished gem in Chinatown, beloved for its warm,
-            accommodating atmosphere and excellent service. The staff are known
-            for their expertise, particularly in handling diverse hair types,
-            including Asian hair. Many customers, some loyal for over 15 years,
-            praise the salon for consistently delivering stylish cuts, colors,
-            and relaxing experiences. The salon's commitment to customer
-            satisfaction has earned it strong recommendations and a dedicated
-            clientele.
+            Ann&apos;s Salon is a cherished gem in Chinatown, beloved for its
+            warm, accommodating atmosphere and excellent service. The staff are
+            known for their expertise, particularly in handling diverse hair
+            types, including Asian hair. Many customers, some loyal for over 15
+            years, praise the salon for consistently delivering stylish cuts,
+            colors, and relaxing experiences. The salon&apos;s commitment to
+            customer satisfaction has earned it strong recommendations and a
+            dedicated clientele.
           </Heading>
         </article>
         <article className="w-full h-full md:order-2 order-1">
