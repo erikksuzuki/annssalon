@@ -46,7 +46,7 @@ const HeroSection = () => {
                 Professional hair, nails and skin care
               </SubHeading>
               <Button shadow className="mt-12" size="lg">
-                Book Now
+                Contact Us
               </Button>
             </div>
           </div>

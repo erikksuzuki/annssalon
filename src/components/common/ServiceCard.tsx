@@ -32,80 +32,82 @@ const ServiceCard = ({
   dialogContent = [{ name: 'Service', price: 30 }],
 }: ServiceCardProps) => {
   return (
-    <Dialog.Root>
-      <Dialog.Trigger asChild>
-        <div className="px-1 py-10">
+    <div className="px-1 pb-10">
+      <div
+        style={{
+          transitionProperty: 'all',
+          transitionDuration: '150ms',
+          transitionTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
+        }}
+        className={clsx(
+          'flex flex-col w-full shadow-lg hover:shadow-xl card bg-white relative top-0 md:hover:top-[-8px]',
+          'm-4 rounded-xl border-2 border-white overflow-hidden pb-8 group cursor-move',
+          className
+        )}
+      >
+        <AspectRatio.Root ratio={9 / 6}>
           <div
             style={{
-              transitionProperty: 'all',
-              transitionDuration: '150ms',
-              transitionTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
+              backgroundImage: `url(${imgSrc})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
             }}
-            className={clsx(
-              'flex flex-col w-full shadow-lg hover:shadow-xl card bg-white relative top-0 hover:top-[-8px]',
-              'm-4 rounded-xl border-2 border-white overflow-hidden pb-8 group cursor-pointer',
-              className
-            )}
-          >
-            <AspectRatio.Root ratio={9 / 6}>
-              <div
-                style={{
-                  backgroundImage: `url(${imgSrc})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}
-                className="w-full h-full"
-              />
-            </AspectRatio.Root>
-            <article className="text-black w-full text-center mt-8 px-8">
-              <SubHeading className="mb-1 opacity-[0.7]">
-                {subHeading}
-              </SubHeading>
-              <Heading className="mb-3">{heading}</Heading>
-              <p className="mb-3 opacity-[0.7]">{children}</p>
+            className="w-full h-full"
+          />
+        </AspectRatio.Root>
+        <article className="text-black w-full text-center mt-8 px-8">
+          <SubHeading className="mb-1 opacity-[0.7]">{subHeading}</SubHeading>
+          <Heading className="mb-3">{heading}</Heading>
+          <p className="mb-3 opacity-[0.7]">{children}</p>
+
+          <Dialog.Root>
+            <Dialog.Trigger asChild>
               <Button
                 className="group-hover:bg-[#EA0C9E] group-hover:text-[#fff]"
                 size="md"
-                secondaryColor
               >
                 View Services
               </Button>
-            </article>
-          </div>
-        </div>
-      </Dialog.Trigger>
-      <Dialog.Portal>
-        <Dialog.Overlay className="DialogOverlay" />
-        <Dialog.Content className="DialogContent bg-white rounded-md fixed left-[50%] top-[50%] w-[90vw] max-w-[450px] max-h-[85vh] p-[25px]">
-          <Dialog.Title className="m-0 font-medium text-theme-heading-xs text-black font-sedan">
-            {heading}
-          </Dialog.Title>
-          <Dialog.DialogContent className="text-black">
-            <ul className="mt-2">
-              {dialogContent.map((service: Service, index: number) => {
-                const lastItem = index === dialogContent.length - 1
-                return (
-                  <li
-                    key={service.name + index}
-                    className={clsx('flex flex-row justify-between pt-2', {
-                      'border-b border-[#ccc] pb-2': !lastItem,
+            </Dialog.Trigger>
+            <Dialog.Portal>
+              <Dialog.Overlay className="DialogOverlay" />
+              <Dialog.Content className="DialogContent focus:outline-none bg-white rounded-md fixed left-[50%] top-[50%] w-[90vw] max-w-[450px] max-h-[85vh] p-[25px]">
+                <Dialog.Title className="m-0 font-medium text-theme-heading-xs text-black font-sedan">
+                  {heading}
+                </Dialog.Title>
+                <Dialog.DialogContent className="focus:outline-none text-black">
+                  <hr className="border-2 border-[#1F7482] mt-4 rounded-full" />
+                  <ul className="mt-2">
+                    {dialogContent.map((service: Service, index: number) => {
+                      const lastItem = index === dialogContent.length - 1
+                      return (
+                        <li
+                          key={service.name + index}
+                          className={clsx(
+                            'flex flex-row justify-between pt-2',
+                            {
+                              'border-b border-[#ccc] pb-2': !lastItem,
+                            }
+                          )}
+                        >
+                          <p>{service.name}</p>
+                          <p>${service.price}</p>
+                        </li>
+                      )
                     })}
-                  >
-                    <p>{service.name}</p>
-                    <p>${service.price}</p>
-                  </li>
-                )
-              })}
-            </ul>
-          </Dialog.DialogContent>
-          <Dialog.Close className="text-black" asChild>
-            <button className="IconButton" aria-label="Close">
-              <Cross2Icon />
-            </button>
-          </Dialog.Close>
-        </Dialog.Content>
-      </Dialog.Portal>
-    </Dialog.Root>
+                  </ul>
+                </Dialog.DialogContent>
+                <Dialog.Close className="text-black" asChild>
+                  <button className="IconButton" aria-label="Close">
+                    <Cross2Icon />
+                  </button>
+                </Dialog.Close>
+              </Dialog.Content>
+            </Dialog.Portal>
+          </Dialog.Root>
+        </article>
+      </div>
+    </div>
   )
 }
 
