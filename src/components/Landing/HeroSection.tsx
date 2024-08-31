@@ -2,7 +2,7 @@
 
 import { useMessages, useTranslations } from 'next-intl'
 
-import LanguagePicker from '@/components/common/LanguageSwitcher'
+import { Link } from 'react-scroll'
 
 import Button from '@/components/common/Button'
 import ShopPhoto from '@/assets/photos/shop.jpg'
@@ -42,9 +42,12 @@ const HeroSection = () => {
               <SubHeading className="mt-4">
                 Professional hair, nails and skin care
               </SubHeading>
-              <Button shadow className="mt-12" size="lg" href="#contactus">
-                Contact Us
-              </Button>
+
+              <Link to="contactsection" duration={1000}>
+                <Button shadow className="mt-12" size="lg">
+                  Contact Us
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

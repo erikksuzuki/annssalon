@@ -17,7 +17,8 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'landing' })
   return {
     title: "Ann's Salon",
-    description: t('metadata.description'),
+    description:
+      "Ann's Salon is a cherished gem in Chinatown Las Vegas, beloved for its warm, accommodating atmosphere and excellent service. The staff are known for their expertise, particularly in handling diverse hair types, including Asian hair. Many customers, some loyal for over 15 years, praise the salon for consistently delivering stylish cuts, colors, and relaxing experiences. The salon's commitment to customer satisfaction has earned it strong recommendations and a dedicated clientele.",
     robots: {
       index: true,
       follow: true,
@@ -28,11 +29,11 @@ export async function generateMetadata({
     },
     openGraph: {
       title: "Ann's Salon",
-      url: 'https://emptyblueprints.art',
+      url: 'https://annssalon.vercel.app',
       siteName: "Ann's Salon",
       images: [
         {
-          url: 'https://emptyblueprints.art/opengraph-image.jpg',
+          url: 'https://annssalon.vercel.app',
           width: 1200,
           height: 630,
         },
