@@ -41,7 +41,7 @@ const ServiceCard = ({
         }}
         className={clsx(
           'flex flex-col w-full shadow-lg md:hover:shadow-xl card bg-white relative top-0 md:hover:top-[-8px]',
-          'm-4 rounded-xl border-2 border-white overflow-hidden h-full group cursor-move',
+          'm-4 rounded-xl border-2 border-white overflow-hidden h-full group cursor-move prevent-select',
           className
         )}
       >

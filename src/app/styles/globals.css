@@ -334,6 +334,12 @@ body {
   box-shadow: 0 0 0 2px #000;
 }
 
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
 @keyframes overlayShow {
   from {
     opacity: 0;

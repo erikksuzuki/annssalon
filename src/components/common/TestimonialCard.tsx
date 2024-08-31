@@ -36,7 +36,7 @@ const TestimonialCard = ({
         }}
         className={clsx(
           'flex flex-col h-full w-full shadow-lg hover:shadow-xl card bg-[#1F7482] relative top-0 md:hover:top-[-8px]',
-          'm-4 rounded-xl overflow-hidden pb-3 group px-4 cursor-move',
+          'm-4 rounded-xl overflow-hidden pb-3 group px-4 cursor-move prevent-select',
           className
         )}
       >
