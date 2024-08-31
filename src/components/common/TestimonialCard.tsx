@@ -36,7 +36,7 @@ const TestimonialCard = ({
         }}
         className={clsx(
           'flex flex-col h-full w-full shadow-lg hover:shadow-xl card bg-[#1F7482] relative top-0 md:hover:top-[-8px]',
-          'm-4 rounded-xl overflow-hidden pb-3 group px-4',
+          'm-4 rounded-xl overflow-hidden pb-3 group px-4 cursor-move',
           className
         )}
       >
@@ -50,11 +50,11 @@ const TestimonialCard = ({
               }}
               className="rounded-full w-[100px] h-[100px] border-4 border-[#fff] absolute top-[-52px] ml-[-52px] left-[50%]"
             />
-            <div className="text-[#ccc]">
-              <IconQuote className="absolute top-[-16px] ml-[-100px] left-[50%] w-8 h-8 opacity-[0.7]" />
+            <div className="text-[#bcd6da]">
+              <IconQuote className="absolute top-[-16px] ml-[-120px] left-[50%] w-8 h-8 opacity-[0.7]" />
               <div
                 style={{ transform: 'rotate(180deg)' }}
-                className="absolute top-[-16px] ml-[64px] left-[50%]"
+                className="absolute top-[-16px] ml-[84px] left-[50%]"
               >
                 <IconQuote className=" w-8 h-8 opacity-[0.7]" />
               </div>

@@ -31,6 +31,7 @@ export default function Home() {
         </header>
         <ServiceCarousel />
       </section>
+
       <section className="mt-12">
         <GiantQuote />
       </section>

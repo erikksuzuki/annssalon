@@ -8,7 +8,7 @@ const PhotoQuote = () => {
   return (
     <section className="mx-auto max-w-[1280px] md:px-4 py-14">
       <div className="grid grid-cols-1 shadow-lg card lg:grid-cols-2 bg-white m-4 rounded-xl border-2 border-white overflow-hidden">
-        <article className="flex items-start justify-center flex-col text-black md:px-16 px-4 font-bold md:order-1 order-2 py-8">
+        <article className="flex items-start justify-center flex-col text-black md:px-16 px-4 font-bold order-2 py-8">
           <SubHeading className="mb-6 text-[#1F7482]" size="md">
             A Decade of Loyal Customers
           </SubHeading>
@@ -28,7 +28,7 @@ const PhotoQuote = () => {
             dedicated clientele.
           </Heading>
         </article>
-        <article className="w-full h-full md:order-2 order-1">
+        <article className="w-full h-full order-1">
           <Image
             src={ShopSquare.src}
             alt="Shop Photo"
