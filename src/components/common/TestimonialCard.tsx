@@ -27,7 +27,7 @@ const TestimonialCard = ({
   children = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
 }: TestimonialCardProps) => {
   return (
-    <div className="px-1 pb-10 flex-grow h-full">
+    <div className="px-1 pb-[240px] md:pb-[40px] flex-grow h-full">
       <div
         style={{
           transitionProperty: 'all',
