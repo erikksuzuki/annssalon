@@ -35,11 +35,11 @@ const ContactUs = () => {
             <ul className="w-full">
               <OpeningHours day="Saturday" time="10 AM – 7 PM" />
               <OpeningHours day="Sunday" time="11 AM – 6 PM" />
-              <OpeningHours day="Monday" time="11 AM – 6 PM" />
-              <OpeningHours day="Tuesday" time="11 AM – 6 PM" />
-              <OpeningHours day="Wednesday" time="11 AM – 6 PM" />
-              <OpeningHours day="Thursday" time="11 AM – 6 PM" />
-              <OpeningHours day="Friday" time="11 AM – 6 PM" />
+              <OpeningHours day="Monday" time="10 AM – 7 PM" />
+              <OpeningHours day="Tuesday" time="10 AM – 7 PM" />
+              <OpeningHours day="Wednesday" time="10 AM – 7 PM" />
+              <OpeningHours day="Thursday" time="10 AM – 7 PM" />
+              <OpeningHours day="Friday" time="10 AM – 7 PM" />
             </ul>
 
             <div className="flex justify-start items-center gap-x-3 pt-4">
