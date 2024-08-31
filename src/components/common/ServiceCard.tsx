@@ -32,7 +32,7 @@ const ServiceCard = ({
   dialogContent = [{ name: 'Service', price: 30 }],
 }: ServiceCardProps) => {
   return (
-    <div className="px-1 pb-10">
+    <div className="px-1 pb-[240px] md:pb-[40px] flex-grow h-full">
       <div
         style={{
           transitionProperty: 'all',
@@ -40,8 +40,8 @@ const ServiceCard = ({
           transitionTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
         }}
         className={clsx(
-          'flex flex-col w-full shadow-lg hover:shadow-xl card bg-white relative top-0 md:hover:top-[-8px]',
-          'm-4 rounded-xl border-2 border-white overflow-hidden pb-8 group cursor-move',
+          'flex flex-col w-full shadow-lg md:hover:shadow-xl card bg-white relative top-0 md:hover:top-[-8px]',
+          'm-4 rounded-xl border-2 border-white overflow-hidden h-full group cursor-move',
           className
         )}
       >
@@ -55,15 +55,16 @@ const ServiceCard = ({
             className="w-full h-full"
           />
         </AspectRatio.Root>
-        <article className="text-black w-full text-center mt-8 px-8">
-          <SubHeading className="mb-1 opacity-[0.7]">{subHeading}</SubHeading>
-          <Heading className="mb-3">{heading}</Heading>
-          <p className="mb-3 opacity-[0.7]">{children}</p>
-
+        <article className="text-black w-full text-center py-8 px-8 flex flex-col justify-between h-full">
+          <div>
+            <SubHeading className="mb-1 opacity-[0.7]">{subHeading}</SubHeading>
+            <Heading className="mb-3">{heading}</Heading>
+            <p className="mb-0 opacity-[0.7]">{children}</p>
+          </div>
           <Dialog.Root>
             <Dialog.Trigger asChild>
               <Button
-                className="group-hover:bg-[#EA0C9E] group-hover:text-[#fff]"
+                className="group-hover:bg-[#EA0C9E] group-hover:text-[#fff] mt-0"
                 size="md"
               >
                 View Services
@@ -85,9 +86,8 @@ const ServiceCard = ({
                           key={service.name + index}
                           className={clsx(
                             'flex flex-row justify-between pt-2',
-                            {
-                              'border-b border-[#ccc] pb-2': !lastItem,
-                            }
+                            { 'border-b border-[#ccc] pb-2': !lastItem },
+                            { 'pb-3': lastItem }
                           )}
                         >
                           <p>{service.name}</p>
@@ -98,7 +98,13 @@ const ServiceCard = ({
                   </ul>
                 </Dialog.DialogContent>
                 <Dialog.Close className="text-black" asChild>
-                  <button className="IconButton" aria-label="Close">
+                  <button
+                    className={clsx(
+                      'rounded full h-7 w-7 inline-flex items-center top-[24px]',
+                      'bg-[#eee] justify-center text-black absolute right-[24px]'
+                    )}
+                    aria-label="Close"
+                  >
                     <Cross2Icon />
                   </button>
                 </Dialog.Close>
