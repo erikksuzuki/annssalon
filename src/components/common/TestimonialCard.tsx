@@ -59,7 +59,7 @@ const TestimonialCard = ({
                 <IconQuote className=" w-8 h-8 opacity-[0.7]" />
               </div>
             </div>
-            <SubHeading size="sm" className="mb-6 opacity-[0.9] text-black">
+            <SubHeading size="sm" className="mb-3 opacity-[0.9] text-black">
               {name}
             </SubHeading>
           </header>
