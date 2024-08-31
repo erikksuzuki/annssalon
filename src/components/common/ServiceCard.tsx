@@ -91,7 +91,7 @@ const ServiceCard = ({
                           )}
                         >
                           <p>{service.name}</p>
-                          <p>${service.price}</p>
+                          <p>${service.price} & up</p>
                         </li>
                       )
                     })}
