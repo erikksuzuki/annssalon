@@ -79,7 +79,7 @@ const RootLayout = async ({
 }>) => {
   const messages = await getMessages()
   return (
-    <html lang="en">
+    <html lang="en" style={{ scrollBehavior: 'smooth' }}>
       <head>
         <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
         <Analytics />

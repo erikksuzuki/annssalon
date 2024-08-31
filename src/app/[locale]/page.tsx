@@ -8,6 +8,7 @@ import ServiceCarousel from '@/components/Landing/ServiceCarousel'
 import HeroSection from '@/components/Landing/HeroSection'
 import TestimonialCarousel from '@/components/Landing/TestimonialCarousel'
 import SubHeading from '@/components/common/SubHeading'
+import ContactUs from '@/components/Landing/ContactUs'
 
 export default function Home() {
   const t = useTranslations('header')
@@ -49,8 +50,7 @@ export default function Home() {
         </header>
         <TestimonialCarousel />
       </section>
-
-      <div className="py-24 px-4 md:px-8 w-full mx-auto max-w-[1024px]"></div>
+      <ContactUs />
     </div>
   )
 }

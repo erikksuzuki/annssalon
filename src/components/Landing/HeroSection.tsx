@@ -33,9 +33,6 @@ const HeroSection = () => {
           }}
         >
           <div className="text-left py-[180px] px-4 md:px-8 w-full mx-auto max-w-[1280px] relative">
-            <div className="absolute top-4 md:top-24 right-4">
-              <LanguagePicker />
-            </div>
             <div className="hidden md:block">
               <Heading size="xl">
                 Your One-Stop Shop For All Your
@@ -45,7 +42,7 @@ const HeroSection = () => {
               <SubHeading className="mt-4">
                 Professional hair, nails and skin care
               </SubHeading>
-              <Button shadow className="mt-12" size="lg">
+              <Button shadow className="mt-12" size="lg" href="#contactus">
                 Contact Us
               </Button>
             </div>

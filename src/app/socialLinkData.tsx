@@ -23,14 +23,14 @@ export const socialLinkData: SocialLink[] = [
     href: 'https://www.instagram.com/',
     icon: <IconInstagram className="w-6 h-6 hover:text-[#FAA6A0]" />,
   },
-  {
-    name: 'LinkedIn',
-    href: 'https://www.linkedin.com/',
-    icon: <IconLinkedin className="w-6 h-6 hover:text-[#4DA6F0]" />,
-  },
-  {
-    name: 'Tumblr',
-    href: 'https://tumblr.com',
-    icon: <IconTumblr className="w-6 h-6 hover:text-[#4DCAE0]" />,
-  },
+  // {
+  //   name: 'LinkedIn',
+  //   href: 'https://www.linkedin.com/',
+  //   icon: <IconLinkedin className="w-6 h-6 hover:text-[#4DA6F0]" />,
+  // },
+  // {
+  //   name: 'Tumblr',
+  //   href: 'https://tumblr.com',
+  //   icon: <IconTumblr className="w-6 h-6 hover:text-[#4DCAE0]" />,
+  // },
 ]
