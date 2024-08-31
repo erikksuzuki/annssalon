@@ -81,10 +81,10 @@ const ServiceCarousel = () => {
             { name: 'Short Hair', price: 90 },
           ]}
         >
-          Enhance your hair's dimension with customized highlights or balayage.
-          This service adds depth and light, with subtle or bold effects, using
-          techniques that blend seamlessly with your natural hair for a
-          sun-kissed, modern finish.
+          Enhance your hair&apos;s dimension with customized highlights or
+          balayage. This service adds depth and light, with subtle or bold
+          effects, using techniques that blend seamlessly with your natural hair
+          for a sun-kissed, modern finish.
         </ServiceCard>
         <ServiceCard
           imgSrc={ServiceHairColor.src}
