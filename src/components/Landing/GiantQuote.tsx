@@ -3,7 +3,7 @@ import SubHeading from '../common/SubHeading'
 
 const GiantQuote = () => {
   return (
-    <section className="py-24 bg-[#1F7482]">
+    <section className="pt-24 pb-20 bg-[#1F7482]">
       <article className="max-w-[1280px] w-full mx-auto flex flex-col items-center justify-center text-center px-4 md:px-8">
         <div className="border-y-8 px-4 md:px-12 border-[rgba(255,255,255,0.2)] pt-20 relative">
           <div className="absolute h-[96px] w-[96px] left-[50%] top-[-54px] bg-[#1F7482] ml-[-48px] flex items-center justify-center">
@@ -16,7 +16,7 @@ const GiantQuote = () => {
           </p>
           <SubHeading
             size="sm"
-            className="md:text-base mt-12 md:mt-20 pb-20 opacity-[0.7]"
+            className="md:text-base mt-8 md:mt-12 pb-16 opacity-[0.7]"
           >
             Charla G. | Google
           </SubHeading>
