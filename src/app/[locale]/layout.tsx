@@ -117,15 +117,6 @@ const RootLayout = async ({
           >
             {children}
           </main>
-          <footer className="bg-black">
-            <main className="py-8 px-4 md:px-8 w-full mx-auto max-w-[1280px]">
-              <SocialLinks
-                data={socialLinkData}
-                className="mt-4"
-                label="Find us at:"
-              />
-            </main>
-          </footer>
         </NextIntlClientProvider>
       </body>
     </html>
