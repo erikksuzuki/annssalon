@@ -1,7 +1,9 @@
+'use client'
+
 import IconPhone from '@/assets/icons/common/IconPhone'
-import Heading from '../common/Heading'
 import SubHeading from '../common/SubHeading'
 import Button from '../common/Button'
+import { useResponsive } from '@/hooks/useResponsive'
 
 const OpeningHours = ({ day, time }: any) => {
   return (
@@ -13,11 +15,15 @@ const OpeningHours = ({ day, time }: any) => {
 }
 
 const ContactUs = () => {
+  const { isAboveMd } = useResponsive('md')
   return (
     <section id="contactus" className="mx-auto max-w-[1280px] md:px-4 py-14">
       <div className="grid grid-cols-1 shadow-lg card lg:grid-cols-2 bg-white m-4 rounded-xl border-2 border-white overflow-hidden">
         <article className="flex items-start justify-center flex-col text-black md:px-16 px-4 font-bold order-1 py-8">
-          <SubHeading className="mb-6 text-[#1F7482]" size="md">
+          <h1 className="text-center text-black font-sedan text-theme-heading-sm my-2">
+            Contact Us
+          </h1>
+          <SubHeading className="mb-6 text-[#1F7482]" size="sm">
             Book Your Appointment Today
           </SubHeading>
           <p className="mb-4">
@@ -52,7 +58,7 @@ const ContactUs = () => {
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12890.576466196695!2d-115.2194373!3d36.1265271!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c6cedb190899%3A0x94bfa50f420eb1d!2sAnn&#39;s%20Salon!5e0!3m2!1sen!2sus!4v1725091961373!5m2!1sen!2sus"
             width="100%"
-            height="600"
+            height={isAboveMd ? '700' : '400'}
             allowFullScreen={true}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
