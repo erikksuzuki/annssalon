@@ -190,10 +190,11 @@ const TestimonialCarousel = () => {
           platform="yelp"
           href="https://www.yelp.com/biz/anns-salon-las-vegas?hrid=4dT8qyUKGYjYCVO8XsHXwQ&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)"
         >
-          Thuy Nguyen (Trish) at Ann&apos;s is an amazing hair professional. She
-          is by far the best hair stylist I&apos;ve ever found. I&apos;ve been
-          going to Thuy for about a year now, and I&apos;ll keep going to her
-          for as long as I live in Las Vegas.
+          <b className="text-black">Thuy Nguyen (Trish)</b> at Ann&apos;s is an
+          amazing hair professional. She is by far the best hair stylist
+          I&apos;ve ever found. I&apos;ve been going to{' '}
+          <b className="text-black">Thuy</b> for about a year now, and I&apos;ll
+          keep going to her for as long as I live in Las Vegas.
         </TestimonialCard>
       </Carousel>
       <div className="text-center opacity-[0.4] block md:hidden absolute bottom-[0px] w-full z-[-100]">
