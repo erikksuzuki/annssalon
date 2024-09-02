@@ -33,7 +33,7 @@ export async function generateMetadata({
       siteName: "Ann's Salon",
       images: [
         {
-          url: 'https://annssalon.vercel.app',
+          url: 'https://annssalon.vercel.app/opengraph-image.jpg',
           width: 1200,
           height: 630,
         },
