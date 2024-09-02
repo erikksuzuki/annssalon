@@ -13,6 +13,8 @@ import ServiceHighlightColor from '@/assets/photos/services/hairhighlights.jpg'
 import ServicePerm from '@/assets/photos/services/perm.jpg'
 import ServiceNails from '@/assets/photos/services/nails.jpg'
 import EyelashExtensions from '@/assets/photos/services/eyelashextensions.jpg'
+import FacialSkinCare from '@/assets/photos/services/skincare.jpg'
+import Waxing from '@/assets/photos/services/waxing.jpg'
 
 import SwipePng from '@/assets/swipe.png'
 import Image from 'next/image'
@@ -160,6 +162,37 @@ const ServiceCarousel = () => {
           technicians customize length, curl, and volume to create a natural or
           dramatic look, using high-quality lashes that are lightweight,
           comfortable, and long-lasting for a beautiful finish.
+        </ServiceCard>
+        <ServiceCard
+          imgSrc={FacialSkinCare.src}
+          subHeading="Starting at $45"
+          heading="Skin Care"
+          dialogContent={[
+            { name: 'Full Facial', price: 65 },
+            { name: 'Microdermabrasion', price: 45 },
+          ]}
+        >
+          Our beauty salon offers expert skin care services, including full
+          facials and microdermabrasion, to rejuvenate your skin. Enjoy
+          personalized treatments that cleanse, exfoliate, and nourish, leaving
+          your skin refreshed, smooth, and radiant.
+        </ServiceCard>
+
+        <ServiceCard
+          imgSrc={Waxing.src}
+          subHeading="Starting at $12"
+          heading="Waxing Services"
+          dialogContent={[
+            { name: 'Eyebrow Waxing', price: 12 },
+            { name: 'Underarm Waxing', price: 20 },
+            { name: 'Half Leg Waxing', price: 40 },
+            { name: 'Full Leg Waxing', price: 70 },
+          ]}
+        >
+          Our salon provides professional waxing services, including eyebrow
+          shaping, underarm, and leg waxing. Achieve smooth, hair-free skin with
+          precise, gentle techniques, ensuring a comfortable experience and
+          long-lasting results for a polished, flawless look.
         </ServiceCard>
       </Carousel>
       <div className="text-center opacity-[0.4] block md:hidden absolute bottom-[0px] w-full z-[-100]">
