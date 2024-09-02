@@ -149,12 +149,10 @@ const TestimonialCarousel = () => {
           href="https://www.yelp.com/biz/anns-salon-las-vegas?hrid=Ptfepp7tA6OOpbFdrGcJOw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)"
         >
           I&apos;ve been coming here for 2 years now and they&apos;ve always
-          done my hair perfect. <b className="text-black">Jenney</b> is the one
-          who normally does it but I&apos;ve <b className="text-black">Henry</b>{' '}
-          and <b className="text-black">Nina</b> have do mine in the past and
-          they also did a fantastic job! I&apos;ve gotten highlights/color many
-          times and will continue coming back and recommend it, everyone who
-          works here is very friendly.
+          done my hair perfect.<b className="text-black">Henry</b> has done mine
+          in the past and he also did a fantastic job! I&apos;ve gotten
+          highlights/color many times and will continue coming back and
+          recommend it, everyone who works here is very friendly.
         </TestimonialCard>
         <TestimonialCard
           className="mb-0"
