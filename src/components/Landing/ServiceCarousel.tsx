@@ -57,13 +57,13 @@ const ServiceCarousel = () => {
       >
         <ServiceCard
           imgSrc={ServiceWomansHairCutPhoto.src}
-          subHeading="Starting at $25"
+          subHeading="Starting at $30"
           heading="Women's Haircut"
           dialogContent={[
             { name: 'Long Haircut & Layer', price: 40 },
             { name: 'Medium Haircut & Layer', price: 35 },
             { name: 'Short Haircut', price: 30 },
-            { name: 'Shampoo for Long Hair', price: 30 },
+            { name: 'Shampoo for Long Hair', price: 20 },
             { name: 'Shampoo & Blowdry', price: 25 },
             { name: 'Hot oil treatment', price: 25 },
           ]}
