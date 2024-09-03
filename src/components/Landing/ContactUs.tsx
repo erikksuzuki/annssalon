@@ -26,8 +26,11 @@ const ContactUs = () => {
             <h1 className="text-center text-black font-sedan text-theme-heading-sm my-2">
               Contact Us
             </h1>
-            <SubHeading className="mb-6 text-[#1F7482]" size="sm">
-              Book Your Appointment Today
+            <SubHeading className="mb-1 text-[#1F7482]" size="sm">
+              Reserve Your Appointment Today
+            </SubHeading>
+            <SubHeading className="mb-6 text-[rgba(73,38,38,0.6)]" size="sm">
+              Walk-in appointments are also welcome
             </SubHeading>
             <p className="mb-4">
               5700 Spring Mountain Rd # J, Las Vegas, NV 89146

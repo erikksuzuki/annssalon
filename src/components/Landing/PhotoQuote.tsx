@@ -10,7 +10,7 @@ const PhotoQuote = () => {
       <div className="grid grid-cols-1 shadow-lg card lg:grid-cols-2 bg-white m-4 rounded-xl border-2 border-white overflow-hidden">
         <article className="flex items-start justify-center flex-col text-black md:px-16 px-4 font-bold order-2 py-8">
           <SubHeading className="mb-6 text-[#1F7482]" size="md">
-            A Decade of Loyal Customers
+            Two Decades of Loyal Customers
           </SubHeading>
 
           <Heading
